@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class 12 NEB English | Question Tag Ultimate Masterclass</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #4338ca;
+      --primary-light: #6366f1;
+      --primary-dark: #312e81;
+      --accent: #0ea5e9;
+      --accent-warm: #f59e0b;
+      --success: #10b981;
+      --danger: #ef4444;
+      --bg: #0f172a;
+      --bg-card: #1e293b;
+      --bg-card-hover: #273549;
+      --border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --radius: 12px;
+      --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Header & Navigation */
+    header {
+      background: linear-gradient(135deg, rgba(30, 41, 59, 0.95), rgba(15, 23, 42, 0.95));
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .brand-badge {
+      background: linear-gradient(135deg, #ef4444, #dc2626);
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      letter-spacing: 0.05em;
+    }
+
+    .brand h1 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      background: linear-gradient(to right, #ffffff, #94a3b8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 600;
+      padding: 0.5rem 0.85rem;
+      border-radius: 8px;
+      transition: all 0.2s ease;
+    }
+
+    nav a:hover, nav a.active {
+      color: #fff;
+      background: rgba(99, 102, 241, 0.2);
+    }
+
+    /* Hero Section */
+    .hero {
+      background: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.18), transparent 70%);
+      padding: 4rem 1.5rem 3rem;
+      text-align: center;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(14, 165, 233, 0.15);
+      border: 1px solid rgba(14, 165, 233, 0.3);
+      color: var(--accent);
+      padding: 0.35rem 1rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero h2 {
+      font-size: 2.75rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
+    .hero h2 span {
+      background: linear-gradient(to right, #6366f1, #38bdf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      color: var(--text-muted);
+      font-size: 1.15rem;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+    }
+
+    .quick-search {
+      max-width: 600px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .quick-search input {
+      width: 100%;
+      padding: 0.9rem 1.25rem 0.9rem 3rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: var(--text);
+      font-size: 1rem;
+      outline: none;
+      transition: all 0.2s;
+    }
+
+    .quick-search input:focus {
+      border-color: var(--primary-light);
+      box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.3);
+    }
+
+    .quick-search svg {
+      position: absolute;
+      left: 1.2rem;
+      top: 50%;
+      transform: translateY(-50%);
+      fill: var(--text-muted);
+    }
+
+    /* Container */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 5rem;
+    }
+
+    /* Section Headers */
+    .section-title {
+      font-size: 1.85rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .section-subtitle {
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+      font-size: 1rem;
+    }
+
+    /* Cards & Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 3.5rem;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+
+    .card:hover {
+      border-color: rgba(99, 102, 241, 0.5);
+      transform: translateY(-2px);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .card-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .badge {
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.2rem 0.6rem;
+      border-radius: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .badge-primary { background: rgba(99, 102, 241, 0.2); color: #818cf8; }
+    .badge-neb { background: rgba(239, 68, 68, 0.2); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.4); }
+    .badge-warning { background: rgba(245, 158, 11, 0.2); color: #fbbf24; }
+    .badge-success { background: rgba(16, 185, 129, 0.2); color: #34d399; }
+
+    /* Code & Example blocks */
+    .example-box {
+      background: rgba(15, 23, 42, 0.6);
+      border-radius: 8px;
+      padding: 0.85rem 1rem;
+      margin: 0.75rem 0;
+      font-size: 0.95rem;
+      border-left: 3px solid var(--primary-light);
+    }
+
+    .example-box.danger {
+      border-left-color: var(--danger);
+    }
+
+    .example-box.success {
+      border-left-color: var(--success);
+    }
+
+    .highlight-tag {
+      color: #38bdf8;
+      font-weight: 700;
+      font-family: 'Fira Code', monospace;
+    }
+
+    .rule-formula {
+      background: rgba(67, 56, 202, 0.25);
+      border: 1px dashed var(--primary-light);
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+      font-family: 'Fira Code', monospace;
+      font-weight: 600;
+      color: #c7d2fe;
+      margin: 1.25rem 0;
+    }
+
+    /* Interactive Tab Menu */
+    .tab-bar {
+      display: flex;
+      gap: 0.75rem;
+      overflow-x: auto;
+      padding-bottom: 0.75rem;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .tab-btn {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      padding: 0.65rem 1.25rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.9rem;
+      white-space: nowrap;
+      transition: all 0.2s;
+    }
+
+    .tab-btn:hover, .tab-btn.active {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary-light);
+    }
+
+    /* Accordion / Dropdown items */
+    .accordion-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      margin-bottom: 0.75rem;
+      overflow: hidden;
+    }
+
+    .accordion-header {
+      padding: 1rem 1.25rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      user-select: none;
+      transition: background 0.2s;
+    }
+
+    .accordion-header:hover {
+      background: var(--bg-card-hover);
+    }
+
+    .accordion-content {
+      padding: 0 1.25rem 1.25rem;
+      display: none;
+      color: var(--text-muted);
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      padding-top: 1rem;
+    }
+
+    .accordion-item.open .accordion-content {
+      display: block;
+    }
+
+    .accordion-item.open .arrow {
+      transform: rotate(180deg);
+    }
+
+    .arrow {
+      transition: transform 0.2s;
+      font-size: 0.8rem;
+    }
+
+    /* Interactive Practice Portal */
+    .qa-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.25rem;
+      margin-bottom: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .qa-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .qa-sentence {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .btn-reveal {
+      background: rgba(99, 102, 241, 0.15);
+      border: 1px solid var(--primary-light);
+      color: #a5b4fc;
+      padding: 0.45rem 0.9rem;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      align-self: flex-start;
+      transition: all 0.2s;
+    }
+
+    .btn-reveal:hover {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    .qa-answer {
+      display: none;
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      padding: 0.75rem 1rem;
+      border-radius: 6px;
+      font-size: 0.95rem;
+    }
+
+    .qa-answer.visible {
+      display: block;
+      animation: fadeIn 0.3s ease;
+    }
+
+    .qa-reason {
+      font-size: 0.85rem;
+      color: #94a3b8;
+      margin-top: 0.25rem;
+    }
+
+    /* NEB Exam Rules Box */
+    .neb-warning-box {
+      background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(185, 28, 28, 0.05));
+      border: 1px solid rgba(239, 68, 68, 0.4);
+      border-radius: var(--radius);
+      padding: 1.75rem;
+      margin-bottom: 3rem;
+    }
+
+    .neb-warning-box h3 {
+      color: #f87171;
+      font-size: 1.25rem;
+      font-weight: 800;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .checklist {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+
+    .checklist li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      font-size: 0.925rem;
+    }
+
+    .checklist li svg {
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+
+    /* Live Quiz Section */
+    .quiz-container {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem;
+      margin-bottom: 3.5rem;
+    }
+
+    .quiz-stats {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 1.5rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .quiz-options {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0.75rem;
+      margin: 1.5rem 0;
+    }
+
+    .quiz-btn {
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 0.85rem 1rem;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      text-align: left;
+      font-family: 'Fira Code', monospace;
+      transition: all 0.2s;
+    }
+
+    .quiz-btn:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--primary-light);
+    }
+
+    .quiz-btn.correct {
+      background: rgba(16, 185, 129, 0.2) !important;
+      border-color: var(--success) !important;
+      color: #34d399 !important;
+    }
+
+    .quiz-btn.wrong {
+      background: rgba(239, 68, 68, 0.2) !important;
+      border-color: var(--danger) !important;
+      color: #f87171 !important;
+    }
+
+    /* Tables */
+    .table-container {
+      overflow-x: auto;
+      margin: 1.5rem 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+      text-align: left;
+    }
+
+    th, td {
+      padding: 0.85rem 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    th {
+      background: rgba(30, 41, 59, 0.8);
+      color: #fff;
+      font-weight: 700;
+    }
+
+    tr:hover td {
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      background: #090d16;
+    }
+
+    /* Utility Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 { font-size: 2rem; }
+      nav ul { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <div class="nav-container">
+      <a href="#" class="brand">
+        <span class="brand-badge">NEB CLASS 12</span>
+        <h1>English Grammar Lab</h1>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#rules" class="active">Core Rules</a></li>
+          <li><a href="#neb-traps">NEB Exam Traps</a></li>
+          <li><a href="#textbook">Official Textbook</a></li>
+          <li><a href="#practice">Question Bank</a></li>
+          <li><a href="#quiz">Test Yourself</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-pill">
+      <span>🇳🇵</span> Designed for National Examination Board (NEB) Nepal
+    </div>
+    <h2>Master <span>Question Tags</span> With Complete Precision</h2>
+    <p>A comprehensive interactive study portal covering CDC textbook exercises, board exam edge cases, contractions, negative polarity words, and past model questions.</p>
+    
+    <div class="quick-search">
+      <svg width="18" height="18" viewBox="0 0 24 24"><path d="M10 2a8 8 0 015.29 13.71l5 5a1 1 0 01-1.42 1.42l-5-5A8 8 0 1110 2zm0 2a6 6 0 100 12 6 6 0 000-12z"/></svg>
+      <input type="text" id="ruleSearch" placeholder="Search rules (e.g., 'let\'s', 'had better', 'hardly', 'sheep')..." onkeyup="filterContent()">
+    </div>
+  </section>
+
+  <main class="container">
+
+    <!-- NEB Board Exam Warning Alert -->
+    <div class="neb-warning-box">
+      <h3>⚠️ NEB Board Examination Writing Protocol (Do Not Lose 1 Mark!)</h3>
+      <p>In NEB Class 12 English Board examinations, Question Tag questions are worth <strong>1 full mark</strong> each. Incomplete answers frequently lose marks due to punctuation and case errors:</p>
+      <ul class="checklist">
+        <li>
+          <svg width="16" height="16" fill="#10b981" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          Always write the <strong>entire sentence</strong> with a comma <code>,</code> before the tag.
+        </li>
+        <li>
+          <svg width="16" height="16" fill="#10b981" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          The tag starts with a <strong>lowercase</strong> letter (e.g., <code>don't they?</code> NOT <code>Don't they?</code>).
+        </li>
+        <li>
+          <svg width="16" height="16" fill="#10b981" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          Always use <strong>contracted negatives</strong> (e.g., <code>isn't</code>, NOT <code>is not</code>).
+        </li>
+        <li>
+          <svg width="16" height="16" fill="#10b981" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          A final <strong>question mark (?)</strong> is mandatory.
+        </li>
+      </ul>
+    </div>
+
+    <!-- The Universal Formula -->
+    <div class="rule-formula">
+      THE GOLDEN LAW: [Statement] + , + [Opposite Polarity Auxiliary] + [Subject Pronoun] + ?
+    </div>
+
+    <!-- Core Rules Section -->
+    <h2 class="section-title" id="rules">📌 1. Fundamentals Every Grade 12 Student Must Master</h2>
+    <p class="section-subtitle">Basic mechanics that govern 80% of question tag formulations.</p>
+
+    <div class="grid">
+      <div class="card searchable">
+        <div class="card-header">
+          <span class="card-title">Subject to Personal Pronoun</span>
+          <span class="badge badge-primary">Rule 1</span>
+        </div>
+        <p>A question tag strictly allows only <strong>personal pronouns</strong> (he, she, it, they, we, you, I) or the dummy pronoun <code>there</code>.</p>
+        <div class="example-box">
+          Ram and Sita are friends → <span class="highlight-tag">aren’t they?</span>
+        </div>
+        <div class="example-box">
+          The dog barked all night → <span class="highlight-tag">didn’t it?</span>
+        </div>
+        <div class="example-box">
+          Nepal has abundant rivers → <span class="highlight-tag">doesn’t it?</span>
+        </div>
+      </div>
+
+      <div class="card searchable">
+        <div class="card-header">
+          <span class="card-title">The "I am" Exception</span>
+          <span class="badge badge-neb">Exam Trap</span>
+        </div>
+        <p>In standard English, there is no contracted form <em>"amn't I"</em>. We must use <code>aren't I?</code> for positive statements and <code>am I?</code> for negative ones.</p>
+        <div class="example-box">
+          I am late for class → <span class="highlight-tag">aren't I?</span>
+        </div>
+        <div class="example-box danger">
+          ❌ Never write: <em>amn't I?</em>
+        </div>
+        <div class="example-box success">
+          I am not disturbing you → <span class="highlight-tag">am I?</span>
+        </div>
+      </div>
+
+      <div class="card searchable">
+        <div class="card-header">
+          <span class="card-title">Present & Past Simple (No Auxiliary)</span>
+          <span class="badge badge-primary">Tense</span>
+        </div>
+        <p>When there is no helping verb present, supply the dummy operators <strong>do / does / did</strong>:</p>
+        <div class="example-box">
+          Verb 1 (eat, go, study) → <span class="highlight-tag">don't / do</span>
+        </div>
+        <div class="example-box">
+          Verb 5 (eats, goes, studies) → <span class="highlight-tag">doesn't / does</span>
+        </div>
+        <div class="example-box">
+          Verb 2 (ate, went, studied) → <span class="highlight-tag">didn't / did</span>
+        </div>
+      </div>
+
+      <div class="card searchable">
+        <div class="card-header">
+          <span class="card-title">Possession "Have" vs Auxiliary "Have"</span>
+          <span class="badge badge-warning">High Yield</span>
+        </div>
+        <p>In modern standard English and NEB board criteria:</p>
+        <div class="example-box">
+          He has completed the task (Auxiliary) → <span class="highlight-tag">hasn't he?</span>
+        </div>
+        <div class="example-box">
+          He has a brand new motorbike (Main Verb/Possession) → <span class="highlight-tag">doesn't he?</span>
+        </div>
+        <div class="example-box">
+          They have lunch at noon (Action Verb) → <span class="highlight-tag">don't they?</span>
+        </div>
+      </div>
+
+      <div class="card searchable">
+        <div class="card-header">
+          <span class="card-title">Obligation: "Have to"</span>
+          <span class="badge badge-primary">Semi-Modal</span>
+        </div>
+        <p>Phrasal modals like <em>have to, has to, had to</em> express obligation and take <strong>do, does, did</strong> tags.</p>
+        <div class="example-box">
+          Students have to wear uniforms → <span class="highlight-tag">don't they?</span>
+        </div>
+        <div class="example-box">
+          She had to leave for Butwal → <span class="highlight-tag">didn't she?</span>
+        </div>
+      </div>
+
+      <div class="card searchable">
+        <div class="card-header">
+          <span class="card-title">Dummy Subject: "There"</span>
+          <span class="badge badge-primary">Grammar</span>
+        </div>
+        <p>When <code>there</code> acts as an introductory subject, it is retained in the question tag instead of changing to <em>it</em> or <em>they</em>.</p>
+        <div class="example-box">
+          There are 30 students in the class → <span class="highlight-tag">aren't there?</span>
+        </div>
+        <div class="example-box">
+          There wasn't any electricity → <span class="highlight-tag">was there?</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- NEB Advanced Traps & Deep Understanding Section -->
+    <h2 class="section-title" id="neb-traps">🔥 2. NEB Board-Level Traps & Advanced Edge Cases</h2>
+    <p class="section-subtitle">Specific questions frequently designed by NEB paper-setters to test nuanced understanding.</p>
+
+    <div class="grid">
+      <!-- Trap 1: Contractions -->
+      <div class="card searchable">
+        <div class="card-header">
+          <span class="card-title">De-coding 'd (Had vs Would)</span>
+          <span class="badge badge-neb">Top Exam Trap</span>
+        </div>
+        <p>In board exams, short forms like <code>'d</code> require you to inspect the following verb:</p>
+        <ul style="margin: 0.75rem 0 0.75rem 1.25rem; font-size: 0.9rem; color: #cbd5e1;">
+          <li><code>'d + V3</code> = <strong>had</strong> (e.g., <em>They'd met</em>)</li>
+          <li><code>'d + better</code> = <strong>had</strong> (e.g., <em>You'd better go</em>)</li>
+          <li><code>'d + rather / V1</code> = <strong>would</strong> (e.g., <em>He'd rather stay</em>)</li>
+        </ul>
+        <div class="example-box">
+          They’d never met me before → <span class="highlight-tag">had they?</span>
+        </div>
+        <div class="example-box">
+          You’d better not take a hard drink → <span class="highlight-tag">had you?</span>
+        </div>
+        <div class="example-box">
+          She’d prefer tea → <span class="highlight-tag">wouldn’t she?</span>
+        </div>
+      </div>
+
+      <!-- Trap 2: Contractions 's -->
+      <div class="card searchable">
+        <div class="card-header">
+          <span class="card-title">De-coding 's (Is vs Has)</span>
+          <span class="badge badge-neb">Frequent</span>
+        </div>
+        <p>Inspect what follows <code>'s</code>:</p>
+        <ul style="margin: 0.75rem 0 0.75rem 1.25rem; font-size: 0.9rem; color: #cbd5e1;">
+          <li><code>'s + V3 / been</code> = <strong>has</strong></li>
+          <li><code>'s + Adjective / Noun / V-ing</code> = <strong>is</strong></li>
+        </ul>
+        <div class="example-box">
+          She’s finished her classes → <span class="highlight-tag">hasn’t she?</span>
+        </div>
+        <div class="example-box">
+          He’s very patient with children → <span class="highlight-tag">isn’t he?</span>
+        </div>
+      </div>
+
+      <!-- Trap 3: Irregular Plurals -->
+      <div class="card searchable">
+        <div class="card-header">
+          <span class="card-title">Irregular Plurals (Sheep, Cattle, Police)</span>
+          <span class="badge badge-neb">Textbook Classic</span>
+        </div>
+        <p>Nouns whose singular and plural forms are identical (sheep, deer) or collective plural nouns (police, cattle) take <strong>plural pronouns (they)</strong>.</p>
+        <div class="example-box">
+          Sheep eat grass (Plural V1: eat) → <span class="highlight-tag">don’t they?</span>
+        </div>
+        <div class="example-box">
+          The police arrested the thief → <span class="highlight-tag">didn’t they?</span>
+        </div>
+        <div class="example-box">
+          Cattle graze in the meadow → <span class="highlight-tag">don't they?</span>
+        </div>
+      </div>
+
+      <!-- Trap 4: Imperatives Nuance -->
+      <div class="card searchable">
+        <div class="card-header">
+          <span class="card-title">Imperatives: "Let's" vs "Let us"</span>
+          <span class="badge badge-warning">Crucial Difference</span>
+        </div>
+        <p>Pay strict attention to whether an apostrophe exists:</p>
+        <div class="example-box">
+          <strong>Let’s</strong> (Proposal / Suggestion) → <span class="highlight-tag">shall we?</span><br>
+          <em>Let’s have a break, shall we?</em>
+        </div>
+        <div class="example-box">
+          <strong>Let us</strong> (Seeking permission / Request) → <span class="highlight-tag">will you?</span><br>
+          <em>Let us invite them, will you?</em>
+        </div>
+        <div class="example-box">
+          Negative Imperative (Don't...) → <span class="highlight-tag">will you?</span><br>
+          <em>Don't let him swim in that pond, will you?</em>
+        </div>
+      </div>
+
+      <!-- Trap 5: Inherent Negatives vs Negative Prefixes -->
+      <div class="card searchable">
+        <div class="card-header">
+          <span class="card-title">Inherent Negatives vs Prefixes</span>
+          <span class="badge badge-neb">Super Trap</span>
+        </div>
+        <p>Words like <em>hardly, scarcely, barely, seldom, rarely, few, little</em> make statements grammatically negative (requiring a <strong>positive tag</strong>).</p>
+        <p style="margin-top:0.5rem; font-size:0.875rem;"><strong>However:</strong> Words with prefixes like <em>unhappy, dislike, impossible, impolite</em> are still <strong>grammatically positive</strong>!</p>
+        <div class="example-box danger">
+          He is unhappy with the decision → <span class="highlight-tag">isn't he?</span> (NOT 'is he?')
+        </div>
+        <div class="example-box success">
+          She barely managed to reach the goal → <span class="highlight-tag">did she?</span>
+        </div>
+      </div>
+
+      <!-- Trap 6: Complex sentences & Opinion verbs -->
+      <div class="card searchable">
+        <div class="card-header">
+          <span class="card-title">Complex Sentences & "I think..."</span>
+          <span class="badge badge-primary">Advanced</span>
+        </div>
+        <p>When statements begin with <code>I think / I believe / I suppose / I imagine</code>, tag the <strong>subordinate clause</strong>. Be careful with transferred negation:</p>
+        <div class="example-box">
+          I think he is honest → <span class="highlight-tag">isn’t he?</span>
+        </div>
+        <div class="example-box">
+          I don’t think she will come (Transferred Negation) → <span class="highlight-tag">will she?</span>
+        </div>
+        <div class="example-box">
+          She thinks that you are right (Third Person) → <span class="highlight-tag">doesn't she?</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Official Class 12 Textbook Questions Explanatory Table -->
+    <h2 class="section-title" id="textbook">📖 3. Official NEB Class 12 Textbook Practice Explained</h2>
+    <p class="section-subtitle">Direct sentences from the CDC Grade 12 Compulsory English Curriculum unit exercises.</p>
+
+    <div class="card" style="margin-bottom: 3.5rem;">
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Official Textbook Sentence</th>
+              <th>Correct Tag</th>
+              <th>Grammatical Explanation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Gill does not know Ann, ______?</td>
+              <td><span class="highlight-tag">does he?</span></td>
+              <td>Negative statement with auxiliary <em>does</em> → positive tag with pronoun <em>he</em>.</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>I’m very patient, ______?</td>
+              <td><span class="highlight-tag">aren’t I?</span></td>
+              <td>Positive <em>I am</em> always tags as <em>aren't I?</em>.</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>They’d never met me before, ______?</td>
+              <td><span class="highlight-tag">had they?</span></td>
+              <td><em>'d + met (V3)</em> = had; <em>never</em> makes the statement negative → positive tag.</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Listen carefully, ______?</td>
+              <td><span class="highlight-tag">will you?</span></td>
+              <td>Imperative command/instruction takes <em>will you?</em>.</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Let’s have a break, ______?</td>
+              <td><span class="highlight-tag">shall we?</span></td>
+              <td><em>Let's</em> implies inclusive proposal/suggestion → <em>shall we?</em>.</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Let us invite them, ______?</td>
+              <td><span class="highlight-tag">will you?</span></td>
+              <td><em>Let us</em> expresses request for permission → <em>will you?</em>.</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Hari used to live in France, ______?</td>
+              <td><span class="highlight-tag">didn’t he?</span></td>
+              <td><em>Used to</em> represents past habitual action → past simple auxiliary <em>didn't</em>.</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>You’d better not take a hard drink, ______?</td>
+              <td><span class="highlight-tag">had you?</span></td>
+              <td><em>'d better</em> = had better. Followed by <em>not</em> (negative) → positive auxiliary <em>had</em>.</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Sheep eat grass, ______?</td>
+              <td><span class="highlight-tag">don’t they?</span></td>
+              <td><em>Sheep</em> is plural because verb is base form <em>eat (V1)</em> → takes <em>they</em> and <em>don't</em>.</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Mr. Pande can speak nine languages, ______?</td>
+              <td><span class="highlight-tag">can’t he?</span></td>
+              <td>Modal verb <em>can</em> in positive clause → negative tag <em>can't he?</em>.</td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>She’s finished her classes, ______?</td>
+              <td><span class="highlight-tag">hasn’t she?</span></td>
+              <td><em>'s + finished (V3)</em> = has finished (Present Perfect) → <em>hasn't she?</em>.</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>She barely managed to reach the goal, ______?</td>
+              <td><span class="highlight-tag">did she?</span></td>
+              <td><em>Barely</em> carries negative meaning; <em>managed</em> is past tense (V2) → positive <em>did</em>.</td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td>Don’t let him swim in that pond, ______?</td>
+              <td><span class="highlight-tag">will you?</span></td>
+              <td>Negative imperative starting with <em>Don't</em> always takes <em>will you?</em>.</td>
+            </tr>
+            <tr>
+              <td>14</td>
+              <td>There are lots of people here, ______?</td>
+              <td><span class="highlight-tag">aren’t there?</span></td>
+              <td>Introductory dummy subject <em>there</em> is repeated in the tag.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Interactive Practice Bank -->
+    <h2 class="section-title" id="practice">📝 4. Complete Practice Question Bank (60+ Items)</h2>
+    <p class="section-subtitle">Click "Reveal Answer & Logic" to verify your answers before sitting for board exams.</p>
+
+    <div class="tab-bar">
+      <button class="tab-btn active" onclick="switchCategory('all')">All Questions</button>
+      <button class="tab-btn" onclick="switchCategory('basic')">Basics (1-15)</button>
+      <button class="tab-btn" onclick="switchCategory('negative')">Negative Clauses (16-25)</button>
+      <button class="tab-btn" onclick="switchCategory('special')">Special Traps (26-36)</button>
+      <button class="tab-btn" onclick="switchCategory('words')">Negative Words (37-49)</button>
+      <button class="tab-btn" onclick="switchCategory('advanced')">Advanced Board Mix (50-65)</button>
+    </div>
+
+    <div id="qaContainer">
+      <!-- Questions rendered via JavaScript for smooth filtering & answer toggling -->
+    </div>
+
+    <!-- Live Interactive Quiz Module -->
+    <h2 class="section-title" id="quiz" style="margin-top: 4rem;">⚡ 5. Real-Time Board Readiness Quiz</h2>
+    <p class="section-subtitle">Test yourself under real exam constraints. Can you score a perfect 10/10?</p>
+
+    <div class="quiz-container">
+      <div class="quiz-stats">
+        <span>Question <span id="currentQNum">1</span> of <span id="totalQNum">10</span></span>
+        <span>Score: <strong id="scoreCount" style="color: var(--accent);">0</strong></span>
+      </div>
+      <div id="quizQuestionArea">
+        <h3 id="quizSentence" style="font-size: 1.35rem; margin-bottom: 1.5rem; font-weight: 700;"></h3>
+        <div class="quiz-options" id="quizOptions"></div>
+        <div id="quizFeedback" style="margin-top: 1rem; font-weight: 600; display: none;"></div>
+      </div>
+      <button id="nextQuizBtn" class="btn-reveal" style="display: none; margin-top: 1.5rem; padding: 0.75rem 1.5rem;" onclick="loadNextQuestion()">Next Question →</button>
+    </div>
+
+    <!-- Quick Revision Sheet (Printable/Saveable) -->
+    <h2 class="section-title">⚡ 6. 60-Second Super Revision Cheat Sheet</h2>
+    <p class="section-subtitle">Memorize this exact list right before entering the exam hall.</p>
+
+    <div class="card" style="background: rgba(15, 23, 42, 0.85); border: 1px solid var(--border);">
+      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); margin-bottom: 0;">
+        <div>
+          <h4 style="color: #38bdf8; margin-bottom: 0.5rem;">Subject Conversions</h4>
+          <ul style="list-style: none; font-size: 0.9rem; line-height: 2;">
+            <li>• Someone / Everyone / Nobody → <strong>they</strong></li>
+            <li>• Something / Nothing / Everything → <strong>it</strong></li>
+            <li>• This / That → <strong>it</strong></li>
+            <li>• These / Those → <strong>they</strong></li>
+            <li>• There is / There are → <strong>there</strong></li>
+            <li>• Sheep / People / Police → <strong>they</strong></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="color: #38bdf8; margin-bottom: 0.5rem;">Special Phrases</h4>
+          <ul style="list-style: none; font-size: 0.9rem; line-height: 2;">
+            <li>• I am → <strong>aren’t I?</strong></li>
+            <li>• Let’s → <strong>shall we?</strong></li>
+            <li>• Let us → <strong>will you?</strong></li>
+            <li>• Don't + V1 → <strong>will you?</strong></li>
+            <li>• Used to → <strong>didn't [pronoun]?</strong></li>
+            <li>• Had better → <strong>hadn't [pronoun]?</strong></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="color: #38bdf8; margin-bottom: 0.5rem;">Inherent Negatives (Take + Tag)</h4>
+          <ul style="list-style: none; font-size: 0.9rem; line-height: 2;">
+            <li>• Never, seldom, rarely</li>
+            <li>• Hardly, scarcely, barely</li>
+            <li>• Little (≠ a little)</li>
+            <li>• Few (≠ a few)</li>
+            <li>• Nobody, nothing, no one</li>
+            <li><em>All demand a <strong>positive</strong> tag!</em></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>Compiled for National Examination Board (NEB) Grade 12 English Students in Nepal.</p>
+    <p style="margin-top: 0.5rem; font-size: 0.8rem; color: #64748b;">Based on CDC Nepal Curriculum and Recent Secondary Education Board Exam Patterns.</p>
+  </footer>
+
+  <script>
+    // Database of Practice Questions
+    const questionsData = [
+      // Basic
+      { id: 1, cat: 'basic', q: "You are a student, __________?", a: "aren't you?", reason: "Auxiliary verb 'are' + positive statement → aren't you?" },
+      { id: 2, cat: 'basic', q: "She is beautiful, __________?", a: "isn't she?", reason: "Auxiliary verb 'is' + positive statement → isn't she?" },
+      { id: 3, cat: 'basic', q: "They are ready, __________?", a: "aren't they?", reason: "Auxiliary verb 'are' + positive statement → aren't they?" },
+      { id: 4, cat: 'basic', q: "He plays football, __________?", a: "doesn't he?", reason: "Simple Present (V5: plays) → doesn't he?" },
+      { id: 5, cat: 'basic', q: "She sings well, __________?", a: "doesn't she?", reason: "Simple Present (V5: sings) → doesn't she?" },
+      { id: 6, cat: 'basic', q: "They work hard, __________?", a: "don't they?", reason: "Simple Present (V1: work) → don't they?" },
+      { id: 7, cat: 'basic', q: "He went to Kathmandu, __________?", a: "didn't he?", reason: "Simple Past (V2: went) → didn't he?" },
+      { id: 8, cat: 'basic', q: "She studied yesterday, __________?", a: "didn't she?", reason: "Simple Past (V2: studied) → didn't she?" },
+      { id: 9, cat: 'basic', q: "You have finished your homework, __________?", a: "haven't you?", reason: "Present Perfect (have + V3) → haven't you?" },
+      { id: 10, cat: 'basic', q: "They have arrived, __________?", a: "haven't they?", reason: "Present Perfect auxiliary 'have' → haven't they?" },
+      { id: 11, cat: 'basic', q: "He will come tomorrow, __________?", a: "won't he?", reason: "Modal 'will' + positive → won't he?" },
+      { id: 12, cat: 'basic', q: "She can drive a car, __________?", a: "can't she?", reason: "Modal 'can' + positive → can't she?" },
+      { id: 13, cat: 'basic', q: "You should study harder, __________?", a: "shouldn't you?", reason: "Modal 'should' + positive → shouldn't you?" },
+      { id: 14, cat: 'basic', q: "They were tired, __________?", a: "weren't they?", reason: "Past plural 'were' → weren't they?" },
+      { id: 15, cat: 'basic', q: "He was absent yesterday, __________?", a: "wasn't he?", reason: "Past singular 'was' → wasn't he?" },
+
+      // Negative Statements
+      { id: 16, cat: 'negative', q: "He isn't your brother, __________?", a: "is he?", reason: "Negative statement with 'is not' → is he?" },
+      { id: 17, cat: 'negative', q: "They aren't ready, __________?", a: "are they?", reason: "Negative statement with 'are not' → are they?" },
+      { id: 18, cat: 'negative', q: "She doesn't like coffee, __________?", a: "does she?", reason: "Negative present with 'does not' → does she?" },
+      { id: 19, cat: 'negative', q: "They don't live here, __________?", a: "do they?", reason: "Negative present with 'do not' → do they?" },
+      { id: 20, cat: 'negative', q: "He didn't call you, __________?", a: "did he?", reason: "Negative past with 'did not' → did he?" },
+      { id: 21, cat: 'negative', q: "She hasn't finished the work, __________?", a: "has she?", reason: "Negative perfect with 'has not' → has she?" },
+      { id: 22, cat: 'negative', q: "They won't come tomorrow, __________?", a: "will they?", reason: "Negative future with 'won't' → will they?" },
+      { id: 23, cat: 'negative', q: "He can't swim, __________?", a: "can he?", reason: "Negative modal 'can't' → can he?" },
+      { id: 24, cat: 'negative', q: "You shouldn't smoke, __________?", a: "should you?", reason: "Negative modal 'shouldn't' → should you?" },
+      { id: 25, cat: 'negative', q: "They weren't late, __________?", a: "were they?", reason: "Negative past 'weren't' → were they?" },
+
+      // Special Cases
+      { id: 26, cat: 'special', q: "I am your friend, __________?", a: "aren't I?", reason: "Positive 'I am' always becomes 'aren't I?'" },
+      { id: 27, cat: 'special', q: "Let's go outside, __________?", a: "shall we?", reason: "'Let's' indicates a shared suggestion/proposal." },
+      { id: 28, cat: 'special', q: "Let us go inside, __________?", a: "will you?", reason: "'Let us' (without contraction) asks for permission." },
+      { id: 29, cat: 'special', q: "Listen carefully, __________?", a: "will you?", reason: "Imperative orders/requests take 'will you?'." },
+      { id: 30, cat: 'special', q: "Don't make noise, __________?", a: "will you?", reason: "Negative imperative always takes 'will you?'." },
+      { id: 31, cat: 'special', q: "Hari used to live in France, __________?", a: "didn't he?", reason: "'Used to' expresses past routine → didn't he?" },
+      { id: 32, cat: 'special', q: "You had better leave now, __________?", a: "hadn't you?", reason: "'Had better' uses the auxiliary 'had'." },
+      { id: 33, cat: 'special', q: "There are many students here, __________?", a: "aren't there?", reason: "Dummy subject 'there' stays in the tag." },
+      { id: 34, cat: 'special', q: "There isn't any problem, __________?", a: "is there?", reason: "Negative 'there isn't' → is there?" },
+      { id: 35, cat: 'special', q: "This is your book, __________?", a: "isn't it?", reason: "'This' changes to 'it' in the tag." },
+      { id: 36, cat: 'special', q: "Those are your shoes, __________?", a: "aren't they?", reason: "'Those' changes to 'they' in the tag." },
+
+      // Inherent Negative Words
+      { id: 37, cat: 'words', q: "He never tells lies, __________?", a: "does he?", reason: "'Never' is inherently negative → positive tag 'does he?'." },
+      { id: 38, cat: 'words', q: "Nobody came to the meeting, __________?", a: "did they?", reason: "'Nobody' is negative; subject pronoun becomes 'they'." },
+      { id: 39, cat: 'words', q: "No one knows the answer, __________?", a: "do they?", reason: "'No one' is negative, subject is 'they' (Verb 1 with they → do)." },
+      { id: 40, cat: 'words', q: "Nothing is impossible, __________?", a: "is it?", reason: "'Nothing' is negative, and things become pronoun 'it'." },
+      { id: 41, cat: 'words', q: "She hardly speaks English, __________?", a: "does she?", reason: "'Hardly' makes clause negative → positive tag 'does she?'." },
+      { id: 42, cat: 'words', q: "He scarcely visits us, __________?", a: "does he?", reason: "'Scarcely' is a semi-negative word → does he?" },
+      { id: 43, cat: 'words', q: "She rarely goes out, __________?", a: "does she?", reason: "'Rarely' gives negative meaning → does she?" },
+      { id: 44, cat: 'words', q: "He seldom watches television, __________?", a: "does he?", reason: "'Seldom' makes statement negative → does he?" },
+      { id: 45, cat: 'words', q: "She barely passed the examination, __________?", a: "did she?", reason: "'Barely' makes clause negative; passed (V2) → did she?" },
+      { id: 46, cat: 'words', q: "Few students attended the class, __________?", a: "did they?", reason: "'Few' = negative (almost none) → positive tag 'did they?'." },
+      { id: 47, cat: 'words', q: "A few students attended the class, __________?", a: "didn't they?", reason: "'A few' = positive (some students) → negative tag 'didn't they?'." },
+      { id: 48, cat: 'words', q: "Little is known about him, __________?", a: "is it?", reason: "'Little' = negative (hardly anything) → positive tag 'is it?'." },
+      { id: 49, cat: 'words', q: "A little water remains, __________?", a: "doesn't it?", reason: "'A little' = positive quantity → negative tag 'doesn't it?'." },
+
+      // Advanced Mix & NEB Models
+      { id: 50, cat: 'advanced', q: "Everyone is ready, __________?", a: "aren't they?", reason: "Indefinite 'Everyone' turns into plural 'they'; 'is' adjusts to 'are'." },
+      { id: 51, cat: 'advanced', q: "Somebody has called you, __________?", a: "haven't they?", reason: "Subject 'they' requires plural auxiliary 'have' (haven't they?)." },
+      { id: 52, cat: 'advanced', q: "Anyone can solve this problem, __________?", a: "can't they?", reason: "'Anyone' becomes 'they'; positive modal 'can' → can't they?" },
+      { id: 53, cat: 'advanced', q: "Everything is fine, __________?", a: "isn't it?", reason: "'Everything' takes singular inanimate pronoun 'it'." },
+      { id: 54, cat: 'advanced', q: "Nothing can stop him, __________?", a: "can it?", reason: "'Nothing' (negative) becomes 'it' with positive modal 'can'." },
+      { id: 55, cat: 'advanced', q: "All of us are responsible, __________?", a: "aren't we?", reason: "'All of us' has first-person plural subject → 'we'." },
+      { id: 56, cat: 'advanced', q: "All of them have arrived, __________?", a: "haven't they?", reason: "'All of them' becomes third-person plural 'they'." },
+      { id: 57, cat: 'advanced', q: "Ram and Sita are friends, __________?", a: "aren't they?", reason: "Compound subject connected by 'and' = they." },
+      { id: 58, cat: 'advanced', q: "My parents have gone to Pokhara, __________?", a: "haven't they?", reason: "'My parents' (plural) = they." },
+      { id: 59, cat: 'advanced', q: "I think he is honest, __________?", a: "isn't he?", reason: "Tag matches the subordinate clause with opinion verb 'I think'." },
+      { id: 60, cat: 'advanced', q: "I don't think she will come, __________?", a: "will she?", reason: "Negative transference ('I don't think') makes the statement negative." },
+      { id: 61, cat: 'advanced', q: "He'd rather stay at home tonight, __________?", a: "wouldn't he?", reason: "'d rather + V1 = would rather → wouldn't he?" },
+      { id: 62, cat: 'advanced', q: "You needn't shout, __________?", a: "need you?", reason: "'Need' is acting as a modal here (negative) → positive 'need you?'." },
+      { id: 63, cat: 'advanced', q: "She is unhappy with her result, __________?", a: "isn't she?", reason: "Prefix 'un-' does NOT make a sentence grammatically negative!" },
+      { id: 64, cat: 'advanced', q: "The cattle are grazing in the field, __________?", a: "aren't they?", reason: "'Cattle' is an irregular plural noun taking pronoun 'they'." }
+    ];
+
+    // Render questions to DOM
+    function renderQuestions(filter = 'all') {
+      const container = document.getElementById('qaContainer');
+      container.innerHTML = '';
+      
+      const filtered = filter === 'all' 
+        ? questionsData 
+        : questionsData.filter(item => item.cat === filter);
+
+      filtered.forEach(item => {
+        const card = document.createElement('div');
+        card.className = 'qa-card searchable';
+        card.innerHTML = `
+          <div class="qa-header">
+            <span class="qa-sentence">${item.id}. ${item.q}</span>
+            <button class="btn-reveal" onclick="toggleAnswer(${item.id})">Reveal Answer</button>
+          </div>
+          <div class="qa-answer" id="ans-${item.id}">
+            <strong>Answer:</strong> <span class="highlight-tag">${item.a}</span>
+            <div class="qa-reason">💡 ${item.reason}</div>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function toggleAnswer(id) {
+      const el = document.getElementById(`ans-${id}`);
+      el.classList.toggle('visible');
+    }
+
+    function switchCategory(cat) {
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+      renderQuestions(cat);
+    }
+
+    // Search filter across cards and practice items
+    function filterContent() {
+      const input = document.getElementById('ruleSearch').value.toLowerCase();
+      const allCards = document.querySelectorAll('.searchable');
+
+      allCards.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        if (text.includes(input)) {
+          card.style.display = "";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    }
+
+    // Interactive Quiz Engine
+    const quizQuestions = [
+      {
+        q: "Sheep eat green grass,",
+        options: ["doesn't it?", "don't they?", "doesn't sheep?", "do they?"],
+        correct: 1,
+        exp: "'Sheep' is plural because the verb is 'eat' (V1). Plural subject takes 'they' and 'don't'."
+      },
+      {
+        q: "You'd better not take a hard drink,",
+        options: ["wouldn't you?", "had you?", "hadn't you?", "would you?"],
+        correct: 1,
+        exp: "'d better = had better. It is followed by 'not', so the tag is positive: 'had you?'."
+      },
+      {
+        q: "Nobody called me while I was away,",
+        options: ["didn't they?", "did he?", "did they?", "weren't they?"],
+        correct: 2,
+        exp: "'Nobody' is negative and turns into pronoun 'they'. Past simple requires 'did they?'."
+      },
+      {
+        q: "I am late for the assembly,",
+        options: ["am I?", "amn't I?", "aren't I?", "isn't I?"],
+        correct: 2,
+        exp: "Standard English requires 'aren't I?' for positive 'I am'."
+      },
+      {
+        q: "Let us go to the library now, sir,",
+        options: ["shall we?", "will you?", "can we?", "won't we?"],
+        correct: 1,
+        exp: "'Let us' asking for permission from a superior takes 'will you?'."
+      },
+      {
+        q: "He is impolite to all his elders,",
+        options: ["is he?", "isn't he?", "doesn't he?", "was he?"],
+        correct: 1,
+        exp: "Prefixes like 'im-' do not make a clause grammatically negative. The tag remains negative: 'isn't he?'."
+      },
+      {
+        q: "She barely passed the final examination,",
+        options: ["didn't she?", "did she?", "hasn't she?", "does she?"],
+        correct: 1,
+        exp: "'Barely' expresses negative polarity, so the tag is positive: 'did she?'."
+      },
+      {
+        q: "I don't think he will pass the test,",
+        options: ["won't he?", "will he?", "do I?", "don't I?"],
+        correct: 1,
+        exp: "Transferred negation with 'I don't think' makes the whole proposition negative: 'will she/he?'."
+      },
+      {
+        q: "Hari used to live in France,",
+        options: ["usedn't he?", "didn't he?", "doesn't he?", "did he?"],
+        correct: 1,
+        exp: "'Used to' expresses past habitual aspect and uses 'did/didn't'."
+      },
+      {
+        q: "Don't let him swim in that dangerous pond,",
+        options: ["shall we?", "will you?", "can't you?", "do you?"],
+        correct: 1,
+        exp: "Negative imperatives starting with 'Don't' always take 'will you?'."
+      }
+    ];
+
+    let currentQuizIndex = 0;
+    let quizScore = 0;
+
+    function loadQuizQuestion() {
+      const q = quizQuestions[currentQuizIndex];
+      document.getElementById('currentQNum').innerText = currentQuizIndex + 1;
+      document.getElementById('totalQNum').innerText = quizQuestions.length;
+      document.getElementById('quizSentence').innerText = `${currentQuizIndex + 1}. ${q.q} ________?`;
+      
+      const optContainer = document.getElementById('quizOptions');
+      optContainer.innerHTML = '';
+      
+      const feedback = document.getElementById('quizFeedback');
+      feedback.style.display = 'none';
+      document.getElementById('nextQuizBtn').style.display = 'none';
+
+      q.options.forEach((opt, idx) => {
+        const btn = document.createElement('button');
+        btn.className = 'quiz-btn';
+        btn.innerText = opt;
+        btn.onclick = () => selectQuizAnswer(idx);
+        optContainer.appendChild(btn);
+      });
+    }
+
+    function selectQuizAnswer(idx) {
+      const q = quizQuestions[currentQuizIndex];
+      const buttons = document.querySelectorAll('.quiz-btn');
+      const feedback = document.getElementById('quizFeedback');
+
+      buttons.forEach(b => b.disabled = true);
+
+      if (idx === q.correct) {
+        buttons[idx].classList.add('correct');
+        quizScore++;
+        document.getElementById('scoreCount').innerText = quizScore;
+        feedback.innerHTML = `<span style="color: #34d399;">✅ Correct!</span> ${q.exp}`;
+      } else {
+        buttons[idx].classList.add('wrong');
+        buttons[q.correct].classList.add('correct');
+        feedback.innerHTML = `<span style="color: #f87171;">❌ Incorrect!</span> Correct answer is <strong>${q.options[q.correct]}</strong>. ${q.exp}`;
+      }
+      
+      feedback.style.display = 'block';
+      document.getElementById('nextQuizBtn').style.display = 'inline-block';
+    }
+
+    function loadNextQuestion() {
+      currentQuizIndex++;
+      if (currentQuizIndex < quizQuestions.length) {
+        loadQuizQuestion();
+      } else {
+        // Quiz finished
+        document.getElementById('quizQuestionArea').innerHTML = `
+          <div style="text-align: center; padding: 2rem 0;">
+            <h3 style="font-size: 2rem; color: #fff; margin-bottom: 0.5rem;">Quiz Completed! 🎉</h3>
+            <p style="font-size: 1.25rem; color: #cbd5e1; margin-bottom: 1.5rem;">Your Final NEB Readiness Score: <strong style="color: #38bdf8;">${quizScore} / ${quizQuestions.length}</strong></p>
+            <p style="color: #94a3b8; max-width: 500px; margin: 0 auto 1.5rem;">${quizScore >= 8 ? 'Outstanding! You have exceptional mastery of question tag nuances.' : 'Good effort! Review the NEB Exam Traps section above and retry.'}</p>
+            <button class="btn-reveal" style="padding: 0.75rem 1.5rem; font-size: 1rem;" onclick="resetQuiz()">Restart Quiz</button>
+          </div>
+        `;
+        document.getElementById('nextQuizBtn').style.display = 'none';
+      }
+    }
+
+    function resetQuiz() {
+      currentQuizIndex = 0;
+      quizScore = 0;
+      document.getElementById('scoreCount').innerText = '0';
+      document.getElementById('quizQuestionArea').innerHTML = `
+        <h3 id="quizSentence" style="font-size: 1.35rem; margin-bottom: 1.5rem; font-weight: 700;"></h3>
+        <div class="quiz-options" id="quizOptions"></div>
+        <div id="quizFeedback" style="margin-top: 1rem; font-weight: 600; display: none;"></div>
+      `;
+      loadQuizQuestion();
+    }
+
+    // Initial setup
+    window.addEventListener('DOMContentLoaded', () => {
+      renderQuestions('all');
+      loadQuizQuestion();
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+        
